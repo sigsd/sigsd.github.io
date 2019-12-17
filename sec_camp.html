@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>System Security Engineering Camp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+
+<style>
+.jumbotron {
+    background-color: darkslategray;
+    color: #ffffff;
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.glyphicon {
+    color: darkorange;
+}
+
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: rgb(245, 245, 245);
+    border: 0;
+    font-weight: bold;
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    opacity: 1;
+    box-shadow: 0px -0px 13px #0006;
+  }
+
+  .container {
+      padding-top: 50px;
+  }
+
+
+  /* Add a gray color to all navbar links */
+  .navbar li a,
+  .navbar .navbar-brand {
+    color: #313131 !important;
+  }
+
+  /* On hover, the links will turn white */
+  .navbar-nav li a:hover {
+    /* color: #1d76ba !important; */
+    background-color: rgb(230, 230, 230) !important;
+  }
+
+  /* The active link */
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #014a81 !important;
+  }
+
+  .navbar-brand {
+    margin-left: -10px !important;
+  }
+  
+
+</style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a href="https://sites.google.com/site/sigdep" target="_blank">
+        <img
+          src="img/sigsd_logo.jpg"
+          class="navbar-brand"
+          style="padding:1px;"
+          alt="SIGSEC&DEP"
+        />
+      </a>
+      <a class="navbar-brand" href="#">System Security Engineering Camp</a>
+     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#event1">소개</a></li>
+        <li><a href="#lecturer">강사 소개</a></li>
+        <li><a href="#registration">등록</a></li>
+        <li><a href="#location">장소</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+     </div>
+  </div>
+</nav>
+
+<div class="jumbotron ">
+    
+    
+    <h1>2020 System Security Engineering Camp</h1>
+    <p>주최: 한국정보과학회 정보보안및고신뢰컴퓨팅 연구회
+        (<a href="https://sites.google.com/site/sigdep">https://sites.google.com/site/sigdep</a>)</p>
+    <div class="row">
+  
+    <div class="col-sm-8">
+    <p>일시: 2020년 2월 12일(수) - 14일(금) 오전 9시 – 오후 5시</p>
+    <p>장소: 한양대학교 ??관 509호</p>
+    </div>
+    
+ 
+    <div class="col-sm-4">
+    <p>후원/협찬 :</p>
+    <button type="button" class="btn btn-default" onclick="window.document.location='http://sigappkr.acm.org/';"><img src="http://sigappkr.acm.org/wp/wp-content/uploads/2019/01/korea_acm_sigapp.png" alt="SIGAPP-KR" height="40"></button>
+
+    </div>
+    
+    </div>
+</div>
+
+
+<div id="event1" class="container">
+
+    <h2 class="text-center">강의 내용</h2>
+    <br/>
+
+    <ul class="list-group"> 
+    <li class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-list-alt"></span> 강의 개요 :</h4>
+        <p class="list-group-item-text">
+                2020년 2월 12일(수): 조성제 교수(단국대) (모바일 앱 보안)<br/>
+                2020년 2월 13일(목): 임을규 교수(한양대) (실행파일 분석 및 펌웨어 보안)<br/>
+                2020년 2월 14일(금): 조민재이사(ICTK홀딩스) (IoT Security)
+        </p>
+    </li>
+
+    <li class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
+            2020년 2월 12일(수): 조성제 교수(단국대) (모바일 앱 보안)</h4>
+        <table class="table">
+            <tr>
+                <th>시간</th><th>프로그램</th>
+            </tr>
+            <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
+            <tr>
+                <td><ul>
+                    <li>IRON file system, F2FS(Flash Friendly File System)</li>
+                    <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
+                </ul></td>
+            </tr>
+            <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+            <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+
+            <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
+
+            <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+            <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+            <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+            <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
+            <tr>
+                <td><ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul></td>
+            </tr>
+        </table>
+    </li>
+
+    <li class="list-group-item">
+            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
+                2020년 2월 13일(목): 임을규 교수(한양대) (실행파일 분석 및 펌웨어 보안)</h4>
+            <table class="table">
+                <tr>
+                    <th>시간</th><th>프로그램</th>
+                </tr>
+                <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>IRON file system, F2FS(Flash Friendly File System)</li>
+                        <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
+                    </ul></td>
+                </tr>
+                <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+                <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+    
+                <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
+    
+                <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+                <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+                <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+                <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
+                <tr>
+                    <td><ul>
+                        <li>...</li>
+                        <li>...</li>
+                    </ul></td>
+                </tr>
+            </table>
+        </li>
+
+        <li class="list-group-item">
+                <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
+                    2020년 2월 14일(금): 조민재이사(ICTK홀딩스) (IoT Security)</h4>
+                <table class="table">
+                    <tr>
+                        <th>시간</th><th>프로그램</th>
+                    </tr>
+                    <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>IRON file system, F2FS(Flash Friendly File System)</li>
+                            <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
+                        </ul></td>
+                    </tr>
+                    <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+                    <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+        
+                    <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
+        
+                    <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+                    <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+                    <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+                    <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
+                    <tr>
+                        <td><ul>
+                            <li>...</li>
+                            <li>...</li>
+                        </ul></td>
+                    </tr>
+                </table>
+            </li>
+
+</div>
+
+
+
+<div id="lecturer" class="container">
+    <h2 class="text-center">강사 소개</h2>
+    <br/>
+    <table class="table">
+    <tbody>
+      <tr><td>조성제 교수</td><td>(현) 단국대학교<br/>
+		약력</td></tr>
+
+      <tr><td>임을규 교수</td><td>(현) 한양대학교<br/>
+      		약력</td></tr>
+
+      <tr><td>조민재 이사</td><td>(현) ICTK홀딩스<br/>
+        약력
+        </td></tr>
+	
+      
+    </tbody>
+    </table>
+</div>  
+
+<div id="registration" class="container bg-grey">
+  <h2 class="text-center">등록</h2>
+  <br/>
+  
+
+  <table class="table">
+    <thead>      <tr>        <th>구분</th>        <th>사전 등록</th>      </tr>    </thead>
+    <tbody>      <tr>        <td>학생</td>        <td>50만원</td>      </tr>
+      <tr>        <td>교수/일반</td>        <td>90만원</td>      </tr>
+      <tr>        <td colspan="3">
+        * <mark>1차 사전 등록 기간: 2020년 1월 13일(월) - 2월 7일(금) 오후 6시</mark><br/>
+        * 선착순 40명 마감<br/>
+        </td></tr>
+    <tbody>
+  </table>
+
+  <p class="text-center">
+  <button class="btn btn-primary btn-sm" onclick="window.document.location='http://www.kiise.or.kr/';">등록 바로가기 >> </button>
+  </p>
+  <p class="text-center">* 등록 페이지에서 한글이 제대로 표시되지 않을 경우, 인코딩을 한국어로 선택해 주십시오.</p>
+
+</div>
+
+<div id="location" class="container">
+    <h2 class="text-center">장소</h2>
+    <br/>
+    <div class="row">
+  
+    <div class="col-sm-6">
+    <h4>한양대학교 </h4> <br/>
+    <span class="glyphicon glyphicon-home"></span> 한양대학교 서울캠퍼스 정보통신관(ITBT관)<br/>
+    2호선 한양대역 2번출구 도보9분 거리
+    </div>
+
+    <div class="col-sm-6">
+    <table cellpadding="0" cellspacing="0" width="272"> <tr> <td style="border:1px solid #cecece;">
+        <a href="http://naver.me/GP6ndIUB" target="_blank"><img src="img/map.png" width="480" alt="지도 크게 보기" title="지도 크게 보기" style="vertical-align:top;"/></a>
+    </td></tr>
+    </table>
+
+	</div>
+    
+    </div>
+</div>
+
+<div id="contact" class="container bg-grey">
+  <h2 class="text-center">연락처</h2>
+  <p>문의 사항은 </p>
+  <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:jyheo0@gmail.com">jyheo0@gmail.com</a></p>
+</div>
+
+<footer class="container text-center">
+  <p>한국정보과학회 <a href="https://sites.google.com/site/sigdep">정보보안및고신뢰컴퓨팅 연구회</a></p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
