@@ -61,6 +61,18 @@
   .navbar-brand {
     margin-left: -10px !important;
   }
+
+  .person {
+    border: 5px solid transparent;
+    /*opacity: 0.8;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%); *//* make all photos black and white */
+    width: 160px;
+  }
+
+  .head-align {
+      text-align: center;
+  }
   
 
 </style>
@@ -105,7 +117,7 @@
   
     <div class="col-sm-8">
     <p>일시: 2020년 2월 12일(수) - 14일(금) 오전 9시 – 오후 5시</p>
-    <p>장소: 한양대학교 ??관 509호</p>
+    <p>장소: 한양대학교 정보통신관(ITBT관) 509호</p>
     </div>
     
  
@@ -121,7 +133,7 @@
 
 <div id="event1" class="container">
 
-    <h2 class="text-center">강의 내용</h2>
+    <h2 class="head-align">강의 내용</h2>
     <br/>
 
     <ul class="list-group"> 
@@ -139,204 +151,233 @@
             2020년 2월 12일(수): 조성제 교수(단국대) (모바일 앱 보안)</h4>
         <table class="table">
             <tr>
-                <th>시간</th><th>프로그램</th>
+                <th class="col-md-2">시간</th><th class="col-md-10">프로그램</th>
             </tr>
-            <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
+            <tr><th rowspan=2>09:00 – 09:50</th><td>시스템 보안 개요</td></tr>
             <tr>
-                <td><ul>
-                    <li>IRON file system, F2FS(Flash Friendly File System)</li>
-                    <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
-                </ul></td>
+                <td>
+                    ● 시스템 보안 정의<br/>
+                    ● 시스템/앱 보안 위협 및 방어 기법                    
+                </td>
             </tr>
-            <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
+            <tr><th rowspan=2>10:00 – 10:50</th><td>안드로이드 보안 구조 및 위협</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● 안드로이드 기본 보안 구조<br/>
+                    ● 앱 역공학 및 repackaging 공격
+                </td>
             </tr>
-            <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
+            <tr><th rowspan=2>11:00 – 11:50</th><td>안드로이드 보안 (I)</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● 앱 보호를 위한 코드 난독화 및 패킹<br/>
+                    ● 동적역공학 방지 기술: Emulator 탐지
+                </td>
             </tr>
 
             <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
 
-            <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
+            <tr><th rowspan=2>13:00 – 13:50</th><td>안드로이드 보안 (II)</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● 안드로이드 기기 루팅 및 루팅 탐지<br/>
+                    ● Code instrumentation 개요
+                </td>
             </tr>
-            <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
+            <tr><th rowspan=2>14:00 – 14:50</th><td>[실습 1] 안드로이드 앱 역공학 공격</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● 특정 기존 앱을 선정하여 역공학<br/>
+                    ● 기존 코드 변경 또는 새로운 코드 추가하여 재패키징
+                </td>
             </tr>
-            <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
+            <tr><th rowspan=2>15:00 – 15:50</th><td>[실습 2] 안드로이드 역공학 방지 기법 1</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● 동적 이진 인스트루멘테이션 실습 (예: Frida 활용)<br/>
+                    ● ProGuard를 이용한 코드 난독화
+                </td>
             </tr>
-            <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
+            <tr><th rowspan=2>16:00 – 16:50</th><td>[실습 3] 안드로이드 역공학 방지 기법 2</td></tr>
             <tr>
-                <td><ul>
-                    <li>...</li>
-                    <li>...</li>
-                </ul></td>
+                <td>
+                    ● Emulator 탐지 기법 실습<br/>
+                    ● 안드로이드 기기의 루팅 여부를 탐지하는 기법 실습
+                </td>
             </tr>
         </table>
     </li>
 
     <li class="list-group-item">
-            <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
-                2020년 2월 13일(목): 임을규 교수(한양대) (실행파일 분석 및 펌웨어 보안)</h4>
-            <table class="table">
-                <tr>
-                    <th>시간</th><th>프로그램</th>
-                </tr>
-                <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>IRON file system, F2FS(Flash Friendly File System)</li>
-                        <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
-                    </ul></td>
-                </tr>
-                <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-                <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-    
-                <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
-    
-                <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-                <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-                <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-                <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
-                <tr>
-                    <td><ul>
-                        <li>...</li>
-                        <li>...</li>
-                    </ul></td>
-                </tr>
-            </table>
-        </li>
+        <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
+            2020년 2월 13일(목): 임을규 교수(한양대) (실행파일 분석 및 펌웨어 보안)</h4>
+        <table class="table">
+            <tr>
+                <th class="col-md-2">시간</th><th class="col-md-10">프로그램</th>
+            </tr>
+            <tr><th rowspan=2>09:00 – 09:50</th><td>Reverse Code Engineering 개요</td></tr>
+            <tr>
+                <td>
+                    ● Windows 실행파일 분석 개요<br/>
+                    ● PE File format과 Memory space
+                </td>
+            </tr>
+            <tr><th rowspan=2>10:00 – 10:50</th><td>Sample exe file 분석 (main 함수 찾기)</td></tr>
+            <tr>
+                <td>
+                    ● Windows 샘플 실행 파일 디버깅<br/>
+                    ● 실행 파일에서 main() 함수 찾기
+                </td>
+            </tr>
+            <tr><th rowspan=2>11:00 – 11:50</th><td>실행 압축 테스트 및 inline patch</td></tr>
+            <tr>
+                <td>
+                    ● UPX 도구를 활용한 압축 실행 파일 생성<br/>
+                    ● 압축 실행 파일 구조 설명<br/>
+                    ● 압축 실행 파일 디버깅<br/>
+                    ● inline patch 실습
+                </td>
+            </tr>
 
-        <li class="list-group-item">
-                <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
-                    2020년 2월 14일(금): 조민재이사(ICTK홀딩스) (IoT Security)</h4>
-                <table class="table">
-                    <tr>
-                        <th>시간</th><th>프로그램</th>
-                    </tr>
-                    <tr><th rowspan=2>09:00 – 09:50</th><td>파일 시스템 코드 수준 분석 필요성: Case Study</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>IRON file system, F2FS(Flash Friendly File System)</li>
-                            <li>Manycore Scalability of FS, CCFS (Crash-Consistent File System)</li>
-                        </ul></td>
-                    </tr>
-                    <tr><th rowspan=2>10:00 – 10:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-                    <tr><th rowspan=2>11:00 – 11:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-        
-                    <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
-        
-                    <tr><th rowspan=2>13:00 – 13:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-                    <tr><th rowspan=2>14:00 – 14:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-                    <tr><th rowspan=2>15:00 – 15:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-                    <tr><th rowspan=2>16:00 – 16:50</th><td>...</td></tr>
-                    <tr>
-                        <td><ul>
-                            <li>...</li>
-                            <li>...</li>
-                        </ul></td>
-                    </tr>
-                </table>
-            </li>
+            <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
 
+            <tr><th rowspan=2>13:00 – 13:50</th><td>DLL injection과 DLL loading</td></tr>
+            <tr>
+                <td>
+                    ● DLL injection 실습<br/>
+                    ● DLL 파일 디버깅
+                </td>
+            </tr>
+            <tr><th rowspan=2>14:00 – 14:50</th><td>Code Injection</td></tr>
+            <tr>
+                <td>
+                    ● Code injection 설명<br/>
+                    ● Code injection 실습
+                </td>
+            </tr>
+            <tr><th rowspan=2>15:00 – 15:50</th><td>Firmware 분석 개요</td></tr>
+            <tr>
+                <td>
+                    ● Firmware 구조<br/>
+                    ● Firmware 획득 및 분석 방법
+                </td>
+            </tr>
+            <tr><th rowspan=2>16:00 – 16:50</th><td>Firmware 분석 및 무결성 검증</td></tr>
+            <tr>
+                <td>
+                    ● Firmware 분석 사례<br/>
+                    ● Firmware 무결성 검증 메커니즘
+                </td>
+            </tr>
+        </table>
+    </li>
+
+    <li class="list-group-item">
+        <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-blackboard"></span> 
+            2020년 2월 14일(금): 조민재이사(ICTK홀딩스) (IoT Security)</h4>
+        <table class="table">
+            <tr>
+                <th class="col-md-2">시간</th><th class="col-md-10">프로그램</th>
+            </tr>
+            <tr><th rowspan=2>09:00 – 09:50</th><td>IoT 이야기</td></tr>
+            <tr>
+                <td>
+                    ● IoT역사<br/>
+                    ● IoT 잠재력                    
+                </td>
+            </tr>
+            <tr><th rowspan=2>10:00 – 10:50</th><td>IoT 아키텍처와 IoT핵심 모듈(I)</td></tr>
+            <tr>
+                <td>
+                    ● IoT 에코시스템<br/>
+                    ● IoT 핵심모듈(I) : 감지 및 전력, 데이터통신
+                </td>
+            </tr>
+            <tr><th rowspan=2>11:00 – 11:50</th><td>IoT핵심 모듈(II)</td></tr>
+            <tr>
+                <td>
+                    ● IoT 핵심모듈(II) : 인터넷 라우팅 및 프로토콜<br/>
+                    ● IoT 핵심모듈(III) : 포그/에지 컴퓨팅, 데이터 분석과 머신러닝
+                </td>
+            </tr>
+
+            <tr><th>12:00 – 13:00</th><td>Lunch </td></tr>
+
+            <tr><th rowspan=2>13:00 – 13:50</th><td>IoT 사이버 공격</td></tr>
+            <tr>
+                <td>
+                    ● 사이버 보안 개요<br/>
+                    ● IoT 사이버 공격의 구조
+                </td>
+            </tr>
+            <tr><th rowspan=2>14:00 – 14:50</th><td>IoT 보안(I)</td></tr>
+            <tr>
+                <td>
+                    ● IoT 기기의 생명주기 보안<br/>
+                    ● 물리적 보안 및 하드웨어 보안
+                </td>
+            </tr>
+            <tr><th rowspan=2>15:00 – 15:50</th><td>IoT 보안(II)</td></tr>
+            <tr>
+                <td>
+                    ● IoT 암호화 기술<br/>
+                    ● IoT 분야의 블록체인과 암호화폐
+                </td>
+            </tr>
+            <tr><th rowspan=2>16:00 – 16:50</th><td>[실습] IoT보안 모범 사례</td></tr>
+            <tr>
+                <td>
+                    ● 총체적인 IoT보안<br/>
+                    ● IoT 보안 체크리스트
+                </td>
+            </tr>
+        </table>
+    </li>
+    </ul>
 </div>
 
 
 
 <div id="lecturer" class="container">
-    <h2 class="text-center">강사 소개</h2>
+    <h2 class="head-align">강사 소개</h2>
     <br/>
     <table class="table">
     <tbody>
-      <tr><td>조성제 교수</td><td>(현) 단국대학교<br/>
-		약력</td></tr>
+      <tr><td>조성제 교수<br/>
+        <img src="img/sjcho.jpg" class="img-circle person">
 
-      <tr><td>임을규 교수</td><td>(현) 한양대학교<br/>
-      		약력</td></tr>
+      </td><td>(현) 단국대학교<br/>
+        조성제 교수는 1996년 시스템SW 분야로 박사학위 취득 후,
+         현재 단국대 교수로 재직 중이며 컴퓨터보안 및 운영체제 연구실을 운영하고 있다.
+          주 교육 및 연구 분야는 운영체제 보안, 
+          안드로이드 앱 역공학 방지(코드 난독화, 패킹, 무결성 검증, 루팅 탐지), 
+          머신러닝 기반의 안드로이드 악성 앱 탐지, 앱 지적재산 보호를 위한 실행코드 수준의 앱 유사도 분석 등이다. 
+          국가보안기술연구소, 한국인터넷진흥원, 한국연구재단, IITP, 한국에너지기술평가원 등이 주관하는 
+          정보보안 연구과제들을 다수 수행하고 있다.</td></tr>
 
-      <tr><td>조민재 이사</td><td>(현) ICTK홀딩스<br/>
-        약력
+      <tr><td>임을규 교수<br/>
+        <img src="img/egkim.png" class="img-circle person">
+
+      </td><td>(현) 한양대학교<br/>
+        <ul>
+            <li>2005~현재: 한양대학교 컴퓨터소프트웨어학부 교수</li>
+            <li>2019: 과학기술정보통신부 장관 표창</li>
+            <li>2015~2018: 한국연구재단 전문위원 (RB)</li>
+            <li>2007~현재: 한국정보보호학회 이사</li>
+            <li>2002~2005: 국가보안기술연구소 선임연구원</li>
+            <li>2002: Univ. of Southern California, Computer Science 박사</li>
+            <li>주요 연구 분야: 악성코드 분석, 펌웨어 분석, 소프트웨어 취약점 분석</li>
+        </ul>
+        </td></tr>
+
+      <tr><td>조민재 이사<br/>
+        <img src="img/mjcho.jpg" class="img-circle person">
+
+      </td><td>(현) ICTK홀딩스<br/>
+        조민재 이사는 Yahoo!코리아, 네이버, 쿠팡, 우아한형제들 등에서 개발자, 시스템관리자, 보안담당자로 
+        20년동안 근무하면서 대용량 서비스의 개발과 인프라 및 보안 운영 경험을 가지고 있으며, 
+        차세대보안리더 양성 프로그램 BoB의 취약점 분석트랙 멘토를 하고 있다. 
+        개발보안, 클라우드 보안과IoT 보안에 관심이 많고, 현재 ICTK홀딩스의 솔루션개발실 실장으로 재직중이다.
         </td></tr>
 	
       
@@ -345,7 +386,7 @@
 </div>  
 
 <div id="registration" class="container bg-grey">
-  <h2 class="text-center">등록</h2>
+  <h2 class="head-align">등록</h2>
   <br/>
   
 
@@ -368,7 +409,7 @@
 </div>
 
 <div id="location" class="container">
-    <h2 class="text-center">장소</h2>
+    <h2 class="head-align">장소</h2>
     <br/>
     <div class="row">
   
@@ -390,7 +431,7 @@
 </div>
 
 <div id="contact" class="container bg-grey">
-  <h2 class="text-center">연락처</h2>
+  <h2 class="head-align">연락처</h2>
   <p>문의 사항은 </p>
   <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:jyheo0@gmail.com">jyheo0@gmail.com</a></p>
 </div>
